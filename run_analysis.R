@@ -33,7 +33,7 @@ features_column_names <- features_contents$V2
 # Get contents from activity_labels.txt
 labels_for_activity <- read.table(sprintf('%s/activity_labels.txt', set_working_dir))
 
-# Get merged set and labels data files
+# Sets labels activity, subject and from fetaures_column_names
 merged_data_labels <- merge_test_and_training('y', 'activity')
 merged_data_subjects <- merge_test_and_training('subject', 'subject')
 dataset <- merge_test_and_training('X', features_column_names)
