@@ -13,16 +13,12 @@ The script `run_analysis.R`
 # run_analysis.R
 The script has one function (merge_test_and_training) which performs merging of training and test. The output is a text file (tidy_data.txt) produced in the working directory.
 
-# List of all variables
+# Global Environment
 ```R
 > ls()
- [1] "activity_labels"         "activityLabels"          "data"                    "data_labels"             "dataFeatures"           
- [6] "dataLabels"              "dataset"                 "datasetPath"             "dataSubjects"            "extract_features"       
-[11] "features"                "features_column_names"   "features_contents"       "id_labels"               "labels_for_activity"    
-[16] "melt_data"               "merge_test_and_training" "merged_data_labels"      "merged_data_subjects"    "readMergedData"         
-[21] "set_working_dir"         "setColumnNames"          "subject_test"            "subject_train"           "test_data"              
-[26] "tidy_data"               "tidy_data_set"           "tidyDataset"             "train_data"              "X_test"                 
-[31] "X_train"                 "y_test"                  "y_train"                
+[1] "dataset"                 "features_column_names"   "features_contents"       "labels_for_activity"    
+[5] "merge_test_and_training" "merged_data_labels"      "merged_data_subjects"    "set_working_dir"        
+[9] "tidy_data_set"          
 > 
 ```
 
