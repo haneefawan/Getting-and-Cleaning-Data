@@ -12,12 +12,10 @@ The script `run_analysis.R`
 
 # run_analysis.R
 - The script has one function  called (merge_test_and_training) which performs merging of training and test using the wrapper sprintf() and rbind().
-- sprinf() is used to fetch contents from features.txt and assign to column names, and lables from activity_labels.txt.
-- y is 
-- 
-- 
-- 
-- 
+- sprintf() is used to fetch contents from features.txt and assign to column names, and lables from activity_labels.txt.
+- grepl() is used to match string mean or std.
+- cbind() is used to combine vectors.
+- aggregate() is used to aggregate dataset, by subject and activity, returning means.
 - The output is a text file (tidy_data.txt) produced in the working directory.
 
 # Global Environment
