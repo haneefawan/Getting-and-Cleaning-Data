@@ -15,7 +15,8 @@ The script `run_analysis.R`
 The script has one function (merge_test_and_training) which performs merging of training and test. The output is a text file (tidy_data.txt) produced in the working directory.
 
 # Output summary(tidy_data)
-''' > summary(tidy_data)
+```R
+> summary(tidy_data)
     subject                Activity_Label tBodyAcc-mean()-X tBodyAcc-mean()-Y   tBodyAcc-mean()-Z  tBodyAcc-std()-X  tBodyAcc-std()-Y  
  Min.   : 1.0   LAYING            :30     Min.   :0.2216    Min.   :-0.040514   Min.   :-0.15251   Min.   :-0.9961   Min.   :-0.99024  
  1st Qu.: 8.0   SITTING           :30     1st Qu.:0.2712    1st Qu.:-0.020022   1st Qu.:-0.11207   1st Qu.:-0.9799   1st Qu.:-0.94205  
@@ -114,7 +115,7 @@ The script has one function (merge_test_and_training) which performs merging of 
  Mean   : 0.12592               
  3rd Qu.: 0.20805               
  Max.   : 0.42630               
- '''
+```
 
 
 
