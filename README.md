@@ -10,7 +10,7 @@ Source dataset https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUC
 *  The tidy dataset is created in working directory as (tidy_data.txt).
 *  Code book for the tidy dataset is available [here](codebook.md)
 
-Working Configuration:
+## Working Configuration:
 
 ```R
 
