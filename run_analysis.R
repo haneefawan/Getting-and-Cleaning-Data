@@ -10,6 +10,22 @@
 # Set Working directory
 set_working_dir <- 'UCI_HAR_Dataset'
 
+# Function to merge the training and the test sets to create one data set.
+# Create function
+merge_test_and_training <- function(file, name=FALSE) {
+  merged_data <- data.frame()
+  
+  for (wrapper in c('test', 'train')) {
+    file_name <- sprintf('%s/%s/%s_%s.txt', set_working_dir, wrapper, file, wrapper)
+    merged_data <- rbind(merged_data, read.table(file_name))
+  }
+  
+  if (name != FALSE) {
+    colnames(merged_data) <- name
+  }
+  merged_data
+}
+
 # Get contents from features.txt
 features_contents <- read.table(sprintf('%s/features.txt', set_working_dir))
 features_column_names <- features_contents$V2
@@ -42,19 +58,3 @@ names(tidy_data_set)[names(tidy_data_set) == 'Group.2'] <- 'activity'
 
 # create independent tidy data set with the average of each variable for each activity and each subject.
 write.table(tidy_data_set, "tidy_data.txt", sep="\t", row.names = FALSE)
-
-# Function to merge the training and the test sets to create one data set.
-# Create function
-merge_test_and_training <- function(file, name=FALSE) {
-  merged_data <- data.frame()
-  
-  for (wrapper in c('test', 'train')) {
-    file_name <- sprintf('%s/%s/%s_%s.txt', set_working_dir, wrapper, file, wrapper)
-    merged_data <- rbind(merged_data, read.table(file_name))
-  }
-  
-  if (name != FALSE) {
-    colnames(merged_data) <- name
-  }
-  merged_data
-}
