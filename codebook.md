@@ -11,7 +11,14 @@ The script `run_analysis.R`
 - From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 # run_analysis.R
-The script has one function (merge_test_and_training) which performs merging of training and test. The output is a text file (tidy_data.txt) produced in the working directory.
+- The script has one function  called (merge_test_and_training) which performs merging of training and test using the wrapper sprintf() and rbind().
+- sprinf() is used to fetch contents from features.txt and assign to column names, and lables from activity_labels.txt.
+- y is 
+- 
+- 
+- 
+- 
+- The output is a text file (tidy_data.txt) produced in the working directory.
 
 # Global Environment
 ```R
