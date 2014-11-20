@@ -2,7 +2,6 @@
 Code book that describes the variables, the data, and any transformations or work that you performed to clean up the data
 
 # Introduction
-
 The script `run_analysis.R`
 - Merges the training and the test sets to create one data set.
 - Extracts only the measurements on the mean and standard deviation for each measurement. 
@@ -26,6 +25,3 @@ The script `run_analysis.R`
 [9] "tidy_data_set"          
 > 
 ```
-
-
-
