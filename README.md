@@ -4,9 +4,7 @@ Source dataset https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUC
 
 ## Notes
 *  Assumes the dataset is unzipped in the working directory of RStudio.
-*  Only vaiables containing mean() & std() are used.
 *  The training and test data are available in folders named  train  and  test  respectively.
-*  Rscript <path to>/run_analysis.R.
 *  The tidy dataset is created in working directory as (tidy_data.txt).
 *  Code book for the tidy dataset is available [here](codebook.md)
 
